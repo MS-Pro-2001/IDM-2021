@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        background-color: rgb(15, 15, 15);
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-height: 1200px;
+        margin: 40px 0;
+      }
+
+      .container .card {
+        position: relative;
+        min-width: 320px;
+        height: 440px;
+        box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+          inset -5px -5px 15px rgba(225, 225, 225, 0.1),
+          5px 5px 15px rgba(0, 0, 0, 0.3),
+          -5px -5px 15px rgba(225, 225, 225, 0.1);
+        border-radius: 15px;
+        margin: 30px;
+      }
+
+      .container .card .main-container .img-1 {
+        background-image: url("/Images/Hex.jpg");
+
+        background-size: cover;
+      }
+      .container .card .img-2 {
+        background-image: url("/Images/tumblr_1ce68fb73b2ce6af6449ad97c5752002_20af53db_500.gif");
+        background-size: cover;
+      }
+      .container .card .img-3 {
+        background-image: url("/Images/anima-2.gif");
+        background-size: cover;
+      }
+      .container .card .img-4 {
+        background-color: grey;
+        background-size: cover;
+      }
+      .container .card .img-5 {
+        background-image: url("/Images/interactive-presentation-header\ \(1\).gif");
+        background-size: cover;
+      }
+
+      #one {
+        font-size: 40px;
+        color: black;
+      }
+      #two {
+        font-size: 40px;
+        color: white;
+      }
+      #three {
+        font-size: 40px;
+        color: black;
+      }
+      #four {
+        font-size: 40px;
+        color: black;
+      }
+      #five {
+        font-size: 40px;
+        color: black;
+      }
+
+      .main-container {
+        position: relative;
+        background: green;
+      }
+
+      .container .card .main-container .box {
+        height: 25em;
+
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        border: 2px solid #1e1f23;
+        border-radius: 15px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        transition: all 1s ease;
+        /* background-image: url("Hex.jpg"); */
+        /* background-size: cover; */
+      }
+
+      .back {
+        position: absolute;
+        width: 101%;
+        height: 101%;
+
+        background: grey;
+        border: 4px solid #1e1f23;
+        border-radius: 15px;
+        transform: rotateY(180deg);
+        text-align: center;
+        font-size: 1.4em;
+        font-weight: bold;
+        color: white;
+        z-index: 1;
+        padding-top: 20px;
+      }
+
+      .container .card .main-container .box:hover {
+        /* transform: translateY(-70px); */
+        transform: rotateY(180deg);
+      }
+
+      .container .card .main-container .box .content {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .container .card .main-container .box .content h3 {
+        font-size: 1.8em;
+        font-weight: bold;
+        color: white;
+        z-index: 1;
+        transition: 0.5s;
+        font-family: "Reggae One", cursive;
+      }
+
+      .container .card .main-container .box .content a {
+        position: relative;
+        display: inline-block;
+        padding: 8px 20px;
+        background: rgb(23, 138, 184);
+
+        margin-top: 15px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: 400;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="main-container">
+          <div class="box img-1">
+            <div class="back">
+              <p>
+                Hex is a two-player abstract strategy board game in which
+                players attempt to connect opposite sides of a hexagonal board.
+                The structure of the tournament will be based on the elimination
+                process.
+              </p>
+            </div>
+
+            <div class="content">
+              <h3 id="one">Hex Tournament</h3>
+
+              <!-- <a href="">Read more...</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-container">
+          <div class="box img-2">
+            <div class="back">
+              <p>
+                This will be a cipher solving tournament held on virtual
+                platforms. Fun and exciting rounds are planned for the same. It
+                will be open to all and participants are allowed to use any
+                resources they wish.
+              </p>
+            </div>
+
+            <div class="content">
+              <h3 id="two">Cipher 2.0</h3>
+
+              <!-- <a href="">Read more...</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-container">
+          <div class="box img-3">
+            <div class="back">
+              This will be an event based on treasure hunt events. It will be an
+              elaborate puzzle on a website where the participants have to
+              utilize their deductive analytical and mathematical skills and
+              find the treasure. This event will also be open to all.
+            </div>
+
+            <div class="content">
+              <h3 id="three">Mazematics</h3>
+
+              <!-- <a href="">Read more...</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-container">
+          <div class="box img-4">
+            <div class="back">
+              <p>
+                This will be an online Paper Presentation Competition. The
+                participants shall submit a research paper and then give a
+                presentation on it. There are no themes nor any restrictions
+                regarding papers. Researchers and all students are welcome same
+                for submissions.
+              </p>
+            </div>
+
+            <div class="content">
+              <h3 id="four">Paper Presentation</h3>
+
+              <!-- <a href="">Read more...</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="main-container">
+          <div class="box img-5">
+            <div class="back">
+              <p>
+                This will be an online Poster Presentation
+                Competition. The participants shall submit a poster and then
+                give a presentation on it. We will recommend posters on the
+                theme for this year’s International Day of Mathematics.
+                Nevertheless, we will be open to the posters on any topic
+                related to Mathematics.
+              </p>
+            </div>
+
+            <div class="content">
+              <h3 id="five"> Poster Presentation</h3>
+
+              <!-- <a href="">Read more...</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
