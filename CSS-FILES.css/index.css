@@ -117,7 +117,7 @@ body {
 
 
 body {
-    background: black;
+    background: linear-gradient(to left, #390888, #08000c);
     margin: 0; 
     
 }
