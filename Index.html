@@ -1,45 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+   
+    <link rel="stylesheet" href="/CSS-FILES.css/Homepage.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ############################### TITLE #################################### -->
-
-    <title>IDM-2021</title>
-   
+   <style>
      
-     <!-- ############################### CSS EXTERNAL FILES // FONTS #################################### -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="/CSS-FILES.css/index.css" rel="stylesheet" />
+   </style>
+
+
   </head>
-
   <body>
-    <!--#############################  MAIN CONTENT GOES HERE  ############################### -->
-
-    <div class="banner-text">
+    <nav>
+      <div class="logo">IDM-2021</div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
       <ul>
-        <li><a href="#">Home</a></li>
+       
+      
+        <li><a class="active" href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="/Events/Events.html">Events</a></li>
-        <li><a href="">Teams</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#">Teams</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-      <h2>Welcome</h2>
-    </div>
-    <div class="animation-area">
-      <ul class="box-area">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+    </nav>
+    <div class="content">
+      <div>Responsive Navigation Menu Bar Design</div>
+      <div>using only HTML & CSS</div>
     </div>
 
     <!-- ################################## COUNTDOWN CLOCK #########################################3 -->
@@ -67,6 +61,16 @@
         </div>
       </div>
     </div>
+    <div class="animation-area">
+        <ul class="box-area">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
 
     <script>
       // ######################################  JAVASCRIPT FILES #####################################
@@ -78,7 +82,7 @@
       let secItem = document.querySelector("#sec");
 
       let countDown = () => {
-        let futureDate = new Date("14 March 2021");
+        let futureDate = new Date("21 March 2021");
         let currentDate = new Date();
         let myDate = futureDate - currentDate;
 
